@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Set a fixed width */
+    position: relative; /* Position relative for the close button */
+}
+
+.login-form h4 {
+    margin-bottom: 1.5rem;
+}
+
+.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.box {
+    border: 2px solid black;
+    margin-top: 2%;
+    margin-bottom: 30%;
+    padding: 2%;
+}
+
+.na {
+    background-image: url(./pexels-828860-2535913.jpg);
+    background-size: cover;
+}
+
+.nan {
+    background: url(./pexels-jhong-pascua-1062908-3018845.jpg);
+    background-size: cover;
+}
+footer {
+    background-color: #31adf5;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-info, .footer-links, .footer-contact, .footer-social {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-info h3, .footer-links h3, .footer-contact h3, .footer-social h3 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social a {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #ccc;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.strong {
+    color: green;
+}
+.medium {
+    color: orange;
+}
+.poor {
+    color: red;
+}
+.navigation a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(13, 86, 232);
+    text-decoration: none;
+    border: 2px solid rgb(11, 80, 229);
+    padding: 10px; 
+}
+.navigation a:hover{
+    background-color:rgb(199, 225, 251);
+    color: black;
+}
+
+

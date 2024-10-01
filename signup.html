@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <div class="form-container">
+      <div class="form-box" id="signup-box">
+          <h2>Sign Up</h2>
+          <form id="signup-form" onsubmit="return validateSignup()">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+              <label for="phone">Phone Number:</label>
+              <input type="text" id="phone" name="phone" required placeholder="Enter your phone number">
+
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required placeholder="Enter your password" oninput="checkPasswordStrength()">
+              <div id="password-strength" class="strength-indicator"></div>
+
+              <button type="submit">Sign Up</button>
+          </form>
+          <p>Already have an account? <a href="index.html" onclick="showPage('login')">Login here</a>.</p>
+      </div>
+
+      <div class="form-box" id="login-box" style="display:none;">
+          <h2>Login</h2>
+          <form id="login-form" onsubmit="return validateLogin()">
+              <label for="login-email">Email:</label>
+              <input type="email" id="login-email" name="login-email" required placeholder="Enter your email">
+
+              <label for="login-password">Password:</label>
+              <input type="password" id="login-password" name="login-password" required placeholder="Enter your password">
+
+              <button type="submit">Login</button>
+          </form>
+          <p>Don't have an account? <a href="#" onclick="showPage('signup')">Sign Up here</a>.</p>
+      </div>
+  </div>
+  <script src="signup.js"></script>
+</body>
+</html>
